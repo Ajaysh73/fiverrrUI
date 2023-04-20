@@ -13,9 +13,9 @@
     color: black;
   }
   .container {
-    width: 1400px;
+    width: 1200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px 0px;
     .logo {
       font-size: 34px;
@@ -82,7 +82,7 @@
     border: 0.5px solid lightgray;
   }
   .menu {
-    width: 1400px;
+    width: 1200px;
     padding: 10px 0px;
     display: flex;
     justify-content: space-around;
