@@ -11,7 +11,7 @@ const Featured = () => {
           <div className='search'>
             <div className='searchInput'>
               <img
-                src='/public/img/search.png'
+                src='/img/search.png'
                 alt=''
               />
               <input
@@ -31,7 +31,7 @@ const Featured = () => {
         </div>
         <div className='right'>
           <img
-            src='/public/img/mman.png'
+            src='/img/mman.png'
             alt=''
           />
         </div>

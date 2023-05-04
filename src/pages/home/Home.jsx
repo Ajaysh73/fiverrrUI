@@ -2,9 +2,10 @@ import React from 'react';
 import Featured from '../../components/featured/Featured';
 import TrustedBy from '../../components/trustedBy/TrustedBy';
 import CatCard from '../../components/catCard/CatCard';
+import ProjectCard from '../../components/projectCard/ProjectCard';
 
 import './Home.scss';
-import { cards } from '../../data';
+import { cards, projects } from '../../data';
 import Slide from '../../components/Slide/Slide';
 const Home = () => {
   return (
@@ -12,8 +13,8 @@ const Home = () => {
       <Featured />
       <TrustedBy />
       <Slide
-        slidesToShow={5}
-        arrowsScroll={5}>
+        slidesToShow={4}
+        arrowsScroll={4}>
         {cards.map((card) => (
           <CatCard
             item={card}
@@ -122,6 +123,16 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Slide
+        slidesToShow={3}
+        arrowsScroll={3}>
+        {projects.map((card) => (
+          <ProjectCard
+            item={card}
+            key={card.id}
+          />
+        ))}
+      </Slide>
     </div>
   );
 };
