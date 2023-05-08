@@ -8,16 +8,10 @@ const GigCard = ({ item }) => {
       to='/gig/123'
       className='link'>
       <div className='gigCard'>
-        <img
-          className='gigCardImg'
-          src={item?.img}
-        />
+        <img src={item?.img} />
         <div className='info'>
           <div className='user'>
-            <img
-              className='userImg'
-              src={item?.pp}
-            />
+            <img src={item?.pp} />
             <span>{item.username}</span>
           </div>
           <p>{item.desc}</p>
@@ -33,7 +27,6 @@ const GigCard = ({ item }) => {
         <div className='details'>
           <img
             src='/img/heart.png'
-            className='heart'
             alt=''
           />
           <div className='price'>
